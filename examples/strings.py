@@ -35,7 +35,7 @@ print words_sorted
 # s = "food"
 # dir(s)
 #
-# This will dump a list of all the things you can call the variable with.
+# This will dump a list of all the things you can c all the variable with.
 # E.g. "join" will be in that list if you called dir() on a string.
 # This means that you call `s.join()`.
 #
