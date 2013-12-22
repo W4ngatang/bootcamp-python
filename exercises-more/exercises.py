@@ -41,7 +41,7 @@ def sort_reverse(lst):
 # vowels (upper and lower case) removed. Vowels do not include 'y'
 # e.g. remove_vowels("abcdeABCDE") == "bcdBCD"
 def remove_vowels(s):
-    return s
+    return s.translate(None, 'aeiouAEIOU')
 
 # PROB 8
 # Return the longest word in the lst. If the lst is empty, return None.
