@@ -78,5 +78,9 @@ def find_mismatch(lst1, lst2):
 # PROB 12
 # Returns the list of words that are in word_list but not in vocab_list.
 def spell_checker(vocab_list, word_list):
-    return []
+    diff = []
+    for word in word_list:
+	if not word in vocab_list:
+	    diff.append(word)
+    return diff 
 
