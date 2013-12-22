@@ -73,7 +73,13 @@ def most_frequent_word(lst):
 # mismatched positions in the list.
 # e.g. find_mismatch(["a", "b", "c", "d", "e"], ["f", "b", "c", "g", "e"]) == [0, 3]
 def find_mismatch(lst1, lst2):
-    return []
+    n = 0
+    diff = []
+    while n < len(lst1):
+	if lst1[n] != lst2[n]:
+	    diff.append(n)
+	n += 1
+    return diff
 
 # PROB 12
 # Returns the list of words that are in word_list but not in vocab_list.
