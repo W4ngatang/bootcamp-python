@@ -47,7 +47,11 @@ def remove_vowels(s):
 # Return the longest word in the lst. If the lst is empty, return None.
 # e.g. longest_word(["a", "aaaaaa", "aaa", "aaaa"]) == "aaaaaa"
 def longest_word(lst):
-    return None
+    if len(lst) == 0:
+	return None
+    else:
+    	sorted_lst = sorted(lst, key=len, reverse=True)
+	return sorted_lst[0]
 
 # PROB 9
 # Return a dictionary, mapping each word to the number of times the word
