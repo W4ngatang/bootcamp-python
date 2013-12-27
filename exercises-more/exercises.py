@@ -7,10 +7,7 @@ def num_words(s):
 # PROB 2
 # Return the sum of all the numbers in lst. If lst is empty, return 0.
 def sum_list(lst):
-    sum = 0
-    for num in lst:
-	sum += num
-    return sum
+    return sum(lst)
 
 # PROB 3
 # Return True if x is in lst, otherwise return False.
@@ -48,10 +45,10 @@ def remove_vowels(s):
 # e.g. longest_word(["a", "aaaaaa", "aaa", "aaaa"]) == "aaaaaa"
 def longest_word(lst):
     if len(lst) == 0:
-	return None
+        return None
     else:
-    	sorted_lst = sorted(lst, key=len, reverse=True)
-	return sorted_lst[0]
+        sorted_lst = sorted(lst, key=len, reverse=True)
+        return sorted_lst[0]
 
 # PROB 9
 # Return a dictionary, mapping each word to the number of times the word
@@ -73,10 +70,10 @@ def word_frequency(lst):
 # I looked at solutions but I understand it
 def most_frequent_word(lst):
     if len(lst) == 0:
-	return None
+        return None
     else:
-	freq = word_frequency(lst)
-    	freq_lst = sorted(freq.items(), key=lambda (word, count): count, reverse = True)
+        freq = word_frequency(lst)
+        freq_lst = sorted(freq.items(), key=lambda (word, count): count, reverse = True)
     return freq_lst[0]
     
 
